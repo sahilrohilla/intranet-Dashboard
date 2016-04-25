@@ -37,7 +37,7 @@
     </div>
     <ul class="pager">
     <?php if (!empty($prev_url)) : ?>
-      <li class="date-prev">
+      <li class="date">
         <?php
         $text = '&laquo;';
         $text .= $mini ? '' : ' ' . t('Prev', array(), array('context' => 'date_nav'));
@@ -46,7 +46,7 @@
       </li>
     <?php endif; ?>
     <?php if (!empty($next_url)) : ?>
-      <li class="date-next">
+      <li class="date">
         <?php print l(($mini ? '' : t('Next', array(), array('context' => 'date_nav')) . ' ') . '&raquo;', $next_url, $next_options); ?>
       </li>
     <?php endif; ?>
