@@ -17,6 +17,9 @@ function feeds_user_picture_feeds_processor_targets_alter(&$targets, $entity_typ
  * Callback for mapping. Here is where the actual mapping happens.
  */
 function feeds_user_picture_set_target($source, $entity, $target, $value) {
+  if (!empty($value) && is_array($value)) {
+    $value = array_pop($value);
+  }
   //If not a valid URL or path
   if (!file_exists($value) && !valid_url($value)) {
     return;

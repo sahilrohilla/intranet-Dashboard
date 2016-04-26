@@ -73,14 +73,7 @@
  * @ingroup templates
  */
 ?>
-<?php
- $classes = explode(" ", $navbar_classes);
- 
- if ($key = array_search("container", $classes)) {
-   $classes[$key] = "container-fluid";
- }
- $navbar_classes = implode(" ", $classes);
-?>
+
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
