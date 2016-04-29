@@ -71,16 +71,18 @@ border-bottom: 1px solid white;
     text-transform: uppercase;
 }
 .view-id-eom{
-	border: 1px solid;
+	border: 0px solid;
 	border-radius: 14px ;
 	background-color: rgba(174, 15, 26, 0.77);;
 	color: white;
 	margin-top: 3px;
 }
-.view-id-eom .img1 {margin-top: 10%;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 10%;
+.view-id-eom .img1 {
+    margin-top: 14%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 10%;
+}
 }
 .view-id-eom .empname a {
 	color: white;
@@ -188,7 +190,7 @@ background-size: 47px;
 }
 .btn-info:hover {
     background-color: rgba(174, 15, 26, 0.77);
-    border-color: rgba(174, 15, 26, 0.77);
+    border-color: rgba(174, 15, 26, 0.77);  
     color: #ffffff;
   
 }
@@ -302,11 +304,13 @@ margin-left: 15px;
     margin-left: 70px;
     margin-right: 70px;
 }
-#block-socialfeed-instagram-latest-feed ul li {margin-top: 10%;
+#block-socialfeed-instagram-latest-feed ul li a img{margin-top: 10%;
 padding-bottom: 21px;
     padding-top: 20px;
     border-bottom: 1px solid white;
     margin-left: -40px;}
+
+
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -354,7 +358,8 @@ font-family: Dosis;
 }
 .block:first-child h2.block-title, .page-header{
  text-transform: uppercase;
-font-family: Dosis;   
+font-family: Dosis;  
+color:  rgb(174, 15, 26);
 }
 .view-id-eom .empname a {
  text-transform: uppercase;
@@ -395,7 +400,6 @@ font-family: Dosis;
     color:rgb(174, 15, 26);
 }
 .region-content .profile{
-    text-align: center;
     color:rgb(174, 15, 26);
     font-family: Dosis;
     font-size: 1.5em;  
@@ -419,7 +423,7 @@ font-family: Dosis;
     margin-top: -40px;
     float: right;
 }
-.region.region-content #block-system-main .user-picture{
+.region.region-content #block-system-main .user-picture {
     display: none;
 }
 .view-id-our_team tr a{
@@ -430,5 +434,75 @@ font-family: Dosis;
 vertical-align: middle
 }
 .view-id-our_team td th{
+    display: none;
+}
+.region-sidebar-first .empname{
+    margin-top: 11px;
+}
+.region-sidebar-first .empname a {
+    color: white;
+}
+.flexslider {
+   margin: 41px 0 60px;
+   background: transparent;
+   border: 0px solid; 
+ }
+.flexslider .slides img {
+    width: auto;
+    display: inline;
+}
+.flex-direction-nav a {
+    height: 47px
+}
+#flexslider-3 .views-field-picture {
+    text-align: center;
+    margin-top: 60px;
+}
+#flexslider-3 .views-field-name{
+    text-align: center;
+}
+.views-field-field-birthdays-this-month{
+    text-align: center;
+}
+
+.field-type-birthdays-date .field-label-above, .field-name-field-joining-date .field-label, .field-name-field-name .field-label, .field-name-field-about .field-label  {
+        float: left;
+    width: 27%;
+}
+
+.field-name-field-employee-of-the-month .field-label, .field-name-field-designation .field-label, .field-name-field-employee-code .field-label {
+        float: left;
+    width: 27%;
+}
+
+.field-name-field-eom-month- .field-label, .field-name-field-birthdays-this-month .field-label{
+        float: left;
+    width: 27%;
+}
+#block-quicktabs-facebook h2 {
+    text-align: center;
+    color: rgb(174, 15, 26);
+}
+ul.quicktabs-tabs.quicktabs-style-basic a  {
+    font: bold 21px/0px dosis !important;
+    text-decoration: none;
+    color:rgb(174, 15, 26); 
+    text-transform: capitalize;
+}
+ul.quicktabs-tabs.quicktabs-style-basic {
+    border-bottom: 1px solid #aaa;
+    padding: 1px 5px 0px 101px;
+    font: bold 18px/23px dosis !important;
+    font-weight: bolder;
+    height: 27px;
+    margin: 0;}
+    #popup-active-overlay .admin-menu-site-localhost .overlay-displace-top .admin-menu-processed .admin-menu-position-fixed{
+        display: none;
+    }
+#outerImageContainer {
+    background-color: transparent;
+    overflow: initial;
+}
+#imageDataContainer{
     display: none;
 }

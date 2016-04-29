@@ -1,11 +1,9 @@
 <?php
-
 /**
  * @file
  * template.php
  */
 function portal_preprocess_page(&$variables) {
-
 $classes = $variables['navbar_classes_array'];
   
 	 if ($key = array_search("container", $classes)) {
@@ -23,5 +21,4 @@ $classes = explode(' ', $variables['container_class']);
 	$variables['container_class'] =$container_class;
 	
 	}
-
 ?>
