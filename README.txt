@@ -1,5 +1,10 @@
 
-CONTENTS OF THIS FILE
+username: admin	
+password: admin123
+about:
+This project is the build of intranet dashboard for thepurpose of official use. 
+ 
+1CONTENTS OF THIS FILE
 ---------------------
 
  * About Drupal
