@@ -12,8 +12,9 @@
     
 }
 .col-sm-3 .region-sidebar-first{
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: -2px;
+    margin-top: 10px;
+    padding-left: 0;
 }
 #block-views-eom-block ,#block-views-new-joinee-block {
 	text-align: center;
@@ -34,6 +35,8 @@ text-align: center;
 #block-views-new-joinee-block img {
 	display: inline;
 	text-align: center;
+    margin-top: 8px;
+    margin-left: 15px
 }
 .view-id-fb_feeds .view-content {
 	border: 1px solid;
@@ -69,16 +72,15 @@ border-bottom: 1px solid white;
 	color: rgb(174, 15, 26);
 	text-align: center;
     text-transform: uppercase;
+    margin-right: -17px;
 }
 .view-id-eom{
 	border: 0px solid;
-	border-radius: 14px ;
-	background-color: rgba(174, 15, 26, 0.77);;
-	color: white;
+	border-radius: 5px ;
 	margin-top: 3px;
 }
 .view-id-eom .img1 {
-    margin-top: 14%;
+    margin-top: 12%;
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 10%;
@@ -114,15 +116,15 @@ background-size: 47px;
 
 .view-id-new_joinee{
 	//background-color: rgb(174, 15, 26);
-	margin-top: 3px;
+	margin-top: -30px;
 	border-top: none;
 	margin-top: none;
 	padding-top: 10px
 }
-.view-id-new_joinee .views-field-picture {margin-top: 10%;
-	margin-left: 10%;
+.view-id-new_joinee .views-field-picture {margin-top: -2%;
+	margin-left: 1%;
 	margin-right: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 4%;
 }
 .view-id-new_joinee .views-field-name a{
 	color: rgb(174, 15, 26);
@@ -133,6 +135,7 @@ background-size: 47px;
     text-align: center;
    // background-color: rgb(174, 15, 26);
    text-transform: uppercase;
+   margin-top: 10px;
     
 }
 .row .col-sm-6  h1{
@@ -173,8 +176,8 @@ background-size: 47px;
     z-index: 1;
 }
 .btn-info {
-	margin-top: 10px;
-    margin-bottom: 30px;
+	margin-top: -10px;
+    margin-bottom: 10px;
     -webkit-border-radius: 4px;
     
     -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
@@ -211,10 +214,10 @@ background-size: 47px;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: rgba(21, 165, 137, 0.13);
+    background-color: #F2DEDE;
 }
 .table > thead > tr > td.active, .table > tbody > tr > td.active, .table > tfoot > tr > td.active, .table > thead > tr > th.active, .table > tbody > tr > th.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > tbody > tr.active > td, .table > tfoot > tr.active > td, .table > thead > tr.active > th, .table > tbody > tr.active > th, .table > tfoot > tr.active > th {
-    background-color: rgba(21, 165, 137, 0.34);
+    background-color: rgba(174, 15, 26, 0.41);
 }
 .region-content #block-views-flag-bookmarks-block-1 h2{
     text-align: center;
@@ -228,10 +231,11 @@ background-size: 47px;
 #block-views-user-birthdays-block h2 {
     text-align: center;
     font-family: Dosis;
-    color: white;
-    background-color: rgb(174, 15, 26);
-    margin-top: 20px;
+    color: rgb(174, 15, 26);
+    background-color: transparent;
+    margin-top: -9px;
     text-transform: uppercase;
+    margin-bottom: 26px;
 }
 .view-id-user_birthdays{
 	margin-left: 30px;
@@ -306,18 +310,20 @@ margin-left: 15px;
 }
 #block-socialfeed-instagram-latest-feed ul li a img{margin-top: 10%;
 padding-bottom: 21px;
-    padding-top: 20px;
+    padding-top: 9px;
     border-bottom: 1px solid white;
     margin-left: -40px;}
 
 
-body {
+.wrapper {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.42857143;
     color: #2c3e50;
     background-image: url(images/cover.jpg);
     background-size: cover;
+    padding-top: 72px
+
 }
 .well {
     min-height: 20px;
@@ -333,22 +339,30 @@ body {
 	background: white;
 }
 .col-sm-6 {
-   // width: 48%;
-background: white;
-padding-bottom: 15px;
-margin-left:-15px;
-border-radius: 5px
+    //width: 57.1%;
+    background: white;
+    padding-bottom: 15px;
+    
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .row .region-sidebar-second {
 	background: white;
 	padding-top: 1px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 .footer {
 	background:white;
 }
 .navbar.container, .navbar.container-fluid {
     background-color: rgb(174, 15, 26);
+    margin-bottom: 0px; 
+    border: 0px solid transparent; 
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 .navbar-collapse.collapse ul li a{
     color: white;
@@ -423,11 +437,14 @@ font-family: Dosis;
     margin-top: -40px;
     float: right;
 }
+.#block-social-media-links-social-media-links .block-title{
+    display: none;
+}
 .region.region-content #block-system-main .user-picture {
     display: none;
 }
 .view-id-our_team tr a{
-    font-size: 1.5em;
+    font-size: 1em;
     vertical-align: center;
 }
 .view-id-our_team td{
@@ -439,13 +456,12 @@ vertical-align: middle
 .region-sidebar-first .empname{
     margin-top: 11px;
 }
-.region-sidebar-first .empname a {
-    color: white;
-}
+
 .flexslider {
-   margin: 41px 0 60px;
+   margin: 17px 9px 40px;
    background: transparent;
-   border: 0px solid; 
+   border: 0px solid;
+   margin-right: -9px; 
  }
 .flexslider .slides img {
     width: auto;
@@ -456,7 +472,7 @@ vertical-align: middle
 }
 #flexslider-3 .views-field-picture {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 41px;
 }
 #flexslider-3 .views-field-name{
     text-align: center;
@@ -482,6 +498,7 @@ vertical-align: middle
 #block-quicktabs-facebook h2 {
     text-align: center;
     color: rgb(174, 15, 26);
+margin-top: 0px;
 }
 ul.quicktabs-tabs.quicktabs-style-basic a  {
     font: bold 21px/0px dosis !important;
@@ -490,19 +507,151 @@ ul.quicktabs-tabs.quicktabs-style-basic a  {
     text-transform: capitalize;
 }
 ul.quicktabs-tabs.quicktabs-style-basic {
-    border-bottom: 1px solid #aaa;
-    padding: 1px 5px 0px 101px;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 1px 5px 0px 51px;
     font: bold 18px/23px dosis !important;
     font-weight: bolder;
     height: 27px;
     margin: 0;}
-    #popup-active-overlay .admin-menu-site-localhost .overlay-displace-top .admin-menu-processed .admin-menu-position-fixed{
+#popup-active-overlay .admin-menu-site-localhost .overlay-displace-top .admin-menu-processed .admin-menu-position-fixed{
         display: none;
     }
-#outerImageContainer {
-    background-color: transparent;
-    overflow: initial;
+.flexslider{
+    text-align: center;
 }
-#imageDataContainer{
-    display: none;
+.footer {
+    margin-top: 35px;
+    padding-bottom: 0px;
+    border-top: 1px solid transparent;
+}
+.col-sm-6 .region.region-content #user-login{
+    width: 50%
+}
+.region-sidebar-second .block-quicktabs {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.quicktabs_main.quicktabs-style-basic{
+    margin-bottom: 15px
+}
+#outerImageContainer{
+    min-height: 200px;
+    max-height: 320px;
+}
+.region-footer .menu-name-menu-quicklinks ul li a{
+    color: white;
+    margin-top: -28px;
+    margin-bottom: 6px;
+    float: left;
+    background-color: rgb(174, 15, 26);
+margin-left: 50px;
+font-family: dosis;
+text-transform: uppercase;
+border-radius: 4px;
+}
+.region-footer .menu-name-menu-quicklinks ul li a:hover {
+    background-color: rgba(174, 15, 26, 0.77);
+    border-color: rgba(174, 15, 26, 0.77);  
+    color: #ffffff;
+    }
+#flexslider-3 {
+    border: 1px solid #EBEBEB;
+        margin-left: -13px;
+    margin-right: 19px;
+}
+#modalContainer{
+    overflow: hidden;
+    height: 250px !important;
+}
+#outerImageContainer{
+    height: 250px !important;
+}
+.lightbox2-alt-layout-data #bottomNavClose, .lightbox2-alt-layout #bottomNavClose {
+    margin-top: 1px;
+}
+#imageData #bottomNav {
+    height: 1px;
+}
+.lightbox2-alt-layout #imageData #bottomNav, .lightbox2-alt-layout-data #bottomNav {
+   margin-bottom: 36px;
+}
+.row h2 {
+    font-size: 26px;
+}
+.col-sm-3 {
+    //width: 22%;
+    }
+.col-sm-6 .view-new-joinee .view-footer p {
+    display: none
+}
+.views-field-field-eom-month-{
+    margin-top: 10px;
+margin-bottom: -14px;
+}
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -27px;
+    text-align: center;
+}
+
+#flexslider-2 .field-content { 
+    display: inline-block;
+    margin-top: 6px
+}
+#flexslider-2 .views-field .views-field-field-joining-date{
+    margin-top: 50px
+}
+#flexslider-2 .views-field-field-team{
+    margin-bottom: 33px
+}
+
+#flexslider-3 .views-field-field-birthdays-this-month .field-content {display:inline-block;}
+
+
+#block-socialfeed-facebook-latest-feed ul {
+    list-style: none;
+    padding-left: 10px;
+}
+#block-socialfeed-facebook-latest-feed ul li {
+    list-style: none; 
+    padding-bottom: 10px; 
+}
+#modalContainer ul li {
+        list-style: none;
+        margin-left: -43px;
+}
+#frameHoverNav {
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    position: absolute;
+    bottom: 0px;
+    height: 0px;
+    }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+.quicktabs_main.quicktabs-style-basic {
+    background-color: white;
+    border: 1px solid #E1E1E1;
+    border-top: none;
+    padding: 10px;
+    clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+
+.region-footer .menu-name-menu-quicklinks ul li a {margin-left:0px;}
+.page-node-9 .col-sm-6 {    margin-left: 15px;
+    margin-right: 15px;}
+
+}
+.navbar.container, .navbar.container-fluid {
+     margin-top: 0px;
 }

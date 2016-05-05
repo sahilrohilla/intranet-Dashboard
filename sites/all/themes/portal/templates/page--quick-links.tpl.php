@@ -9,6 +9,11 @@
 #imageDataContainer{
     display: none;
     }
+.wrapper {
+    
+    //background-image: none;
+    
+}
 </style>
 <?php
 print views_embed_view('quick_links', 'block_1');

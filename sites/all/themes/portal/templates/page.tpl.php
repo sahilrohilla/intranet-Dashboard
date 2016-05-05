@@ -125,7 +125,7 @@
 
 ?>
 
-<div class="main-container <?php print $container_class; ?>">
+<div class="main-container wrapper <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -164,7 +164,7 @@
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
+      <div class="main_contents"><?php print render($page['content']); ?> </div>
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>
@@ -177,8 +177,14 @@
 
 </div>
 
-
-
+<?php
+//print views_embed_view('quick_links', 'block_1');
+?>
+<?php if (!empty($page['footer'])): ?>
+  <footer class="footer <?php print $container_class; ?>">
+    <?php print render($page['footer']); ?>
+  </footer>
+<?php endif; ?>
 
 
 
